@@ -1,0 +1,80 @@
+.sec-form-mail {
+    display: block;
+    width: 100%;
+    padding: 50px 200px;
+    
+}
+
+.content-form-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.line-hr {
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-color: rgb(17, 17, 17);
+}
+
+.content-form-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form-mail p{
+    color: #676767;
+    margin-top: 15px;
+}
+
+.item-form-mail {
+    width: 50%;
+    margin: 0px 50px;
+    text-align: center;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.content-form input {
+    display: block;
+    width: 400px;
+    outline: none;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    border-radius: 17px;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.content-form textarea {
+    display: block;
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 100px;
+    max-height: 125px;
+    outline: none;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    border-radius: 17px;
+    border: none;
+    background-color: #eaeaea;
+}
+
+#submitContacto {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submitContacto:hover {
+    background-color: rgb(26, 26, 26);
+}
