@@ -2,6 +2,7 @@
 Sitio web para la venta en linea
 
  <div class="card-producto">
+                    <h1>Hello World</h1>
                     <div class="producto-img"><img src="./img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></div>
                     <div class="monto-producto">$ 1,200.00</div>
                     <div class="producto-marca">Dove</div>
