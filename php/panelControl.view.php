@@ -7,24 +7,23 @@
     <title>Panel de Control</title>
 </head>
 <body>
+
+    <div class="content-bar-cpanel">
+    <button id="btn-" title="Ir a mi cuenta" class="btn btn-nav">MR</button>
+            <nav class="bar-navegation">
+                <button id="btn-" title="" class="btn btn-nav"><img src="./../img/agregar.png" alt="Error 404" title="Agregar"></button>
+                <button id="btn-" title="" class="btn btn-nav"><img src="./../img/inventario.png" alt="Error 404" title="Ver mis Productos"></button>
+                <button id="btn-" title="" class="btn btn-nav"><img src="./../img/buscar-pedido.png" alt="Error 404" title="Ver Pedidos"></button>
+                </nav> 
+            <button id="btn-" title="" class="btn btn-close"><img src="./../img/boton-salir.png" alt="Error 404" title="Salir del Panel de Control"></button>
+    </div>
+    <!-- Este sera el content de flex -->
     <div class="contenedor-cpanel">
-        <div class="item-cpanel nav-cpanel">
-            <h3>Panel de Control</h3>
-            
-                <a href="" title="" class="btn btn-nav">Añadir nuevo producto</a>
-                <a href="" title="" class="btn btn-nav">Ver mis Productos</a>
-                <a href="" title="" class="btn btn-nav">Ver Pedidos</a>
-                <a href="./../index.php" title="" class="btn btn-close">Salir del Panel</a>
-            
-        </div>
         <div class="item-cpanel content">
-            <h4 id="title-proceso">Añadir nuevo producto</h4>
-            <div id="content-navegation" class="item-content">
-                <form id="form-add" action="" method="post">
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">Nombre del Producto</label>
-                    </div>
+            <h3>Segundo panel</h3>
+            <!-- <div id="content-navegation" class="item-content"> -->
+                <!-- <form id="form-add" action="" method="post">
+                    
                     <div class="item-form-input">
                         <input type="text" name="nombreProducto" placeholder="Descripcion del producto">
                         <label for="">Descripcion del producto</label>
@@ -41,56 +40,18 @@
                         </select>
                         <label for="">SELECCIONA LA MARCA</label>
                     </div>
-                    <div class="item-form-input">
-                        <select name="seleccionMarca" id="select-marca">
-                            <option value="MUEBLES">MUEBLES</option>
-                            <option value="TECNOLOGIA">TECNOLOGIA</option>
-                            <option value="CELULARES">CELULARES</option>
-                        </select>
-                        <label for="">SELECCIONA LA CATEGORIA</label>
-                    </div>
+                    
                     <div class="item-form-input content-check">
                         <input id="activarProducto" type="checkbox" name="nombreProducto">
                         <label for="activarProducto">Activar Producto</label>
                     </div>
-                    <div class="item-form-input content-check">
-                        <input id="activarPromo" type="checkbox" name="nombreProducto">
-                        <label for="activarPromo">Activar Promocion</label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">Promocion</label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">Precio</label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">Descuento 1 </label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">IVA</label>
-                    </div>
                     <div class="item-form-input">
                         <input type="submit" value="Añadir Producto" name="nombreProducto" placeholder="NUEVO PRODUCTO">
                     </div>
-                </form>
-                <form id="form-add" action="" method="post">
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="NUEVO PRODUCTO">
-                        <label for="">Nombre del Producto</label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="text" name="nombreProducto" placeholder="Descripcion del producto">
-                        <label for="">Descripcion del producto</label>
-                    </div>
-                    <div class="item-form-input">
-                        <input type="submit" value="Añadir Marca" name="nombreProducto">
-                    </div>
-                </form>
-            </div>
+                </form> -->
+            <!-- </div> -->
+
+
         </div>
     </div>
 </body>

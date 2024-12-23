@@ -5,58 +5,68 @@
     font-family: sans-serif;
 }
 
-.contenedor-cpanel {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 100%;    
-    background-color: #322f2f;
-    color: #fff;
-    /*box-shadow: 8px 8px 3px #b5b4b4;*/
-}
-
-.item-cpanel {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; 
-}
-
-.nav-cpanel {
-    flex-direction: column;
-    width: 40%;
+/*  ===== CSS de BARRA DE NAVEGACION ==== */
+.content-bar-cpanel {
+    background-color: #333;
+    position: fixed;
+    width: auto;
     height: 100%;
-    align-items: center;
-    padding: 20px 30px;
-    border-bottom: 3px solid #068427;
-    background-color: #1754bc;
-}
+    padding: 10px;
+    overflow: hidden;
 
-.navegation-cpanel {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .btn {
-    margin: 0px 5px;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    margin-top: 15px;
+    background-color: #535654;
     color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 13px;
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
 }
 
-.btn-nav {
+.btn img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.btn-nav:hover {
     background-color: #068427;
 }
 
-.btn-close {
+.btn-close:hover {
     background-color: #b51111;
 }
 
-.item-cpanel h3 {
+/*  ===== CSS FIN DE BARRA DE NAVEGACION ==== */
+
+.contenedor-cpanel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    /*box-shadow: 8px 8px 3px #b5b4b4;*/
+}
+
+.content {
+    display: block;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    background-color: #b51111;
+}
+
+/* .item-cpanel h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -69,23 +79,21 @@
     color: #fff;
     font-size: 16px;
     margin-top: 25px;
-}
+} */
 
-#form-add {
-    margin-top: 20px;
+/* .content {
+    min-width: 75%;
+    height: 100%;
+} */
+
+/* form {
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 15px;
-}
+    grid-template-columns: auto auto auto ;
+    gap: 10px; 
+} */
 
-.content {
-    width: 100%;
-    overflow: hidden;
-    flex-direction: column;
-    padding: 30px 0px;
-}
-
-.item-form-input {
+/* .item-form-input {
     display: flex;
     flex-direction: column;
 }
@@ -134,4 +142,4 @@ input[type="submit"] {
     width: 70%;
     cursor: pointer;
     height: 40px;
-}
+} */
