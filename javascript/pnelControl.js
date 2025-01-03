@@ -22,72 +22,67 @@ function buttons() {
     btnAgregar.addEventListener('click', agregarProducto);
     btnMarca.addEventListener('click', agregarMarca);
     btnCategoria.addEventListener('click', agregarCategoria);
-    btnCatalogo.addEventListener('click', agregarCatalogo);
-    btnPedidos.addEventListener('click', agregarPedidos);
+    btnCatalogo.addEventListener('click', verCatalogo);
+    btnPedidos.addEventListener('click', verPedidos);
 }
 
-function borrarHTML(){
-    const contenedorDiv = document.querySelector('#content-navegation');
-    while(contenedorDiv.hasChildNodes()){
-        contenedorDiv.removeChild(contenedorDiv.firstChild);
-    }
-}
-
-async function agregarProducto(){
-    const url = '../data/dataInputAgregar.json';
-    const contenido = await layoutInput(url);
-    
-    generarHTML(contenido);
+function agregarProducto(){
+    borrarHTML();
+    const titulo = document.querySelector('#title-proceso');
+    titulo.textContent = "Agregar nuevo Producto";
+    const contentformulario = document.querySelector('#content-formulario');
+    mostrarHTML(contentformulario);
 }
 
 function agregarMarca(){
-
+    borrarHTML();
+    const titulo = document.querySelector('#title-proceso');
+    titulo.textContent = "Agregar nueva marca";
+    const contentformulario = document.querySelector('#content-form-brand');
+    mostrarHTML(contentformulario);
 }
 
 function agregarCategoria(){
-
+    borrarHTML();
+    const titulo = document.querySelector('#title-proceso');
+    titulo.textContent = "Agregar nueva categoria";
+    const contentformulario = document.querySelector('#content-form-cate');
+    mostrarHTML(contentformulario);
 }
 
-function agregarCatalogo(){
-
+function verCatalogo(){
+    borrarHTML();
+    const titulo = document.querySelector('#title-proceso');
+    titulo.textContent = "Ver mis productos";
+    const contentformulario = document.querySelector('#content-producto');
+    mostrarHTML(contentformulario);
 }
 
-function agregarPedidos() {
-    
+function verPedidos() {
+    borrarHTML();
+    const titulo = document.querySelector('#title-proceso');
+    titulo.textContent = "Ver mis pedidos";
+    const contentformulario = document.querySelector('#content-pedido');
+    mostrarHTML(contentformulario);
 }
 
-async function layoutInput(url){
-    const response = await fetch(url);
-    const contenido = await response.json();
-    return contenido;
+function mostrarHTML(contenido){
+    contenido.classList.remove('ocultar');
 }
 
-function generarHTML(contenido){
-    let id = 0;
-    const contenedorHTML = document.querySelector('#content-navegation');
-    const form = document.createElement('FORM');
-    form.setAttribute('id','form-add');
-    form.method = 'index.php';
-    form.action = "POST";
+function borrarHTML() {
+    const contenedor = document.querySelector('#content-navegation');
+    const formAgregar = document.querySelector('#content-formulario');
+    const formMarca = document.querySelector('#content-form-brand');
+    const formCategoria = document.querySelector('#content-form-cate');
+    const productos = document.querySelector('#content-producto');
+    const pedidos = document.querySelector('#content-pedido');
 
-    contenido.forEach(elementInput => {
-        const div = document.createElement('DIV');
-        const input = document.createElement(elementInput.elemento);
-        
-        div.classList.add('item-form-input');
-        input.type = elementInput.type;
-        input.name = elementInput.name;
-        input.setAttribute('id',elementInput + id);
-        input.placeholder = elementInput.placeholder;
-        div.appendChild(input);
-        if(elementInput.label.length != 0){
-            const label = document.createElement('LABEL');
-            label.textContent = elementInput.label;
-            div.appendChild(label);
-        }
-        form.appendChild(div);
-        id++;
-        console.log(input);
-    });
-    contenedorHTML.appendChild(form);
+    if(contenedor.hasChildNodes){
+        formAgregar.classList.add('ocultar');
+        formMarca.classList.add('ocultar');
+        formCategoria.classList.add('ocultar');
+        productos.classList.add('ocultar');
+        pedidos.classList.add('ocultar');
+    };
 }

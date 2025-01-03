@@ -89,7 +89,11 @@ body{
 
 /* ===========> CSS FORMULARIO ===========> */
 
-form {
+.ocultar {
+    display: none;
+}
+
+#form-add {
     margin-top: 50px;
     display: grid;
     grid-template-columns: auto auto auto ;
