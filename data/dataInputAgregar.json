@@ -1,0 +1,43 @@
+
+[
+    {
+        "elemento" : "input",
+        "type" : "text",
+        "name" : "nombreProducto",
+        "placeholder" : "Descripcion del Producto",
+        "label" : "Descripcion del Producto",
+        "id" : "input-"
+    },
+    {
+        "elemento" : "input",
+        "type" : "number",
+        "name" : "stock",
+        "placeholder" : "STOCK",
+        "label" : "Cantidad en Inventario",
+        "id" : "input-"
+    },
+    {
+        "elemento" : "select",
+        "type" : "",
+        "name" : "seleccionMarca",
+        "placeholder" : "Selecciona una Marca",
+        "label" : "Selecciona la Marca",
+        "id" : "select-marca"
+    },
+    {
+        "elemento" : "input",
+        "type" : "checkbox",
+        "name" : "nombreProducto",
+        "placeholder" : "Nuevo Producto",
+        "label" : "Activar Producto",
+        "id" : "input-"
+    },
+    {
+        "elemento" : "input",
+        "type" : "submit",
+        "name" : "submit",
+        "placeholder" : "Nuevo Producto",
+        "label" : "Activar Producto",
+        "id" : "submitProducto"
+    }
+]
