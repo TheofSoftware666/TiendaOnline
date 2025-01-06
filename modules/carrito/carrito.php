@@ -1,0 +1,5 @@
+<?php
+
+require './carrito.php';
+
+?>

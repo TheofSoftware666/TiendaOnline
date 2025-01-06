@@ -1,0 +1,40 @@
+/*  --> Presentacion <--  */
+@keyframes presentacion {
+    from {height: 100%;}
+    to { 
+        height: 0%;
+        display: none;
+    }
+}
+
+.presentacion-fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.animacion-presentacion {
+    animation: presentacion 1s;
+}
+
+.item-fondo {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 50px;
+}
+
+.item-fondo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+    /*  --> Fin Presentacion <--  */

@@ -1,0 +1,118 @@
+.content-categoria {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.content-categoria h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.content-categoria hr {
+    width: 100%;
+    height: 4px;
+    background: #cbcbcb;
+    margin: 10px 0px 20px 0px;
+    border: none;
+}
+
+.dezplazamiento-categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 30px;
+}
+
+.card-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 3px 3px 20px #d6d6d6;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.producto-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.producto-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn-agregar-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    background-color: #038a27;
+    color: #fff;
+    /* font-weight: bold; */
+    cursor: pointer;
+    /* border-radius: 30px; */
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+.btn-agregar-carrito img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.producto-nombre {
+    color: #9a9999;
+    font-size: 16px;
+}
+
+.producto-marca {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.producto-promocion {
+    background-color: #d12929;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 0px;
+    text-align: center  ;
+    margin: 10px 0px;
+}
+
+.monto-producto {
+    text-align: right;
+    padding: 6px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.producto-con-descuento {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #b4f8c6;
+    color: #085d1f;
+}

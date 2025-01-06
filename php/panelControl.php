@@ -1,4 +1,5 @@
 <?php
 
-    require 'panelControl.view.php';
+require './../controller/controller.pControl.php';
+
 ?>

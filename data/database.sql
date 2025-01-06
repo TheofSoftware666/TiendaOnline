@@ -19,9 +19,10 @@ INSERT INTO CONTACTO VALUES ('Marco Antonio Rico Valadez', 'marcoricovaladez@gma
 
 -- CREAR TABLA DE CATEGORIAS 1ER
 CREATE TABLE CATEGORIA (
-	categoriaId int IDENTITY(1,1) PRIMARY KEY,
+	categoriaId int(10),
 	nombre varchar(20) not null,
-	UNIQUE(nombre)
+	UNIQUE(nombre),
+	PRIMARY KEY(categoriaId)
 );
 
 -- INSERTAR DATO DE PRUEBA ------------------------
@@ -29,28 +30,40 @@ INSERT INTO CATEGORIA VALUES ('MUEBLES'), ('TECNOLOGIA');
 
 -- CREAR TABLA DE MARCA 2DA
 CREATE TABLE MARCA (
-	marcaId int IDENTITY(1,1) PRIMARY KEY,
+	marcaId int(10) AUTO_INCREMENT,
 	nombre varchar(20),
-	UNIQUE(nombre)
+	UNIQUE(nombre),
+	PRIMARY KEY (marcaId)
 );
 
 -- INSERTAR DATO DE PRUEBA-----------------------
 INSERT INTO MARCA VALUES ('PLACENCIA'), ('ASUS');
 INSERT INTO MARCA VALUES ('HP');
 
+--- CREAR TABLA DE TESTIMONIOS
+CREATE TABLE TESTIMONIOS (
+	id_comentario int not null,
+	productoId int not null,
+	usuarioId int not null
+);
+
+CREATE TABLE TESTIMONIOS_C (
+	
+);
+
 -- CREAR TABLA DE PRODUCTOS 3DA
 CREATE TABLE PRODUCTOS (
-	productoId int IDENTITY(1,1) PRIMARY KEY,
+	productoId int(10) AUTO_INCREMENT,
 	nombre varchar(50),
-	descripcion varchar(100),
+	descripcion varchar(120),
 	marcaId int,
 	categoriaId int,
 	stock int, 
-	imagen1 varchar(1000),
-	imagen2 varchar(1000),
-	imagen3 varchar(1000),
-	imagen4 varchar(1000),
-	imagen5 varchar(1000),
+	imagen1 varchar(100),
+	imagen2 varchar(100),
+	imagen3 varchar(100),
+	imagen4 varchar(100),
+	imagen5 varchar(100),
 	estatusProducto bit,
 	estatusPromo bit,
 	promocion integer,
@@ -58,17 +71,19 @@ CREATE TABLE PRODUCTOS (
 	descuento1 smallint,
 	descuento2 smallint,
 	iva bit,
-	CONSTRAINT FK_ProducMarca FOREIGN KEY (marcaId) REFERENCES MARCA(marcaId),
-	CONSTRAINT FK_ProducCategoria FOREIGN KEY (categoriaId) REFERENCES CATEGORIA(categoriaId),
+	vendidos integer,
+	FOREIGN KEY (marcaId) REFERENCES MARCA(marcaId),
+	FOREIGN KEY (categoriaId) REFERENCES CATEGORIA(categoriaId),
+	PRIMARY KEY (productoId),
     UNIQUE(nombre)
 );
 
 -- INSERTAR DATO DE PRUEBA----------------------
-INSERT INTO PRODUCTOS VALUES ('SALA ESQUINADA', 'SALA ESQUINADA DE COLOR ROJO  ', 1, 1, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0, 15000, 20000, 0, 0, 1);
+INSERT INTO PRODUCTOS VALUES ('SALA ESQUINADA', 'SALA ESQUINADA DE COLOR ROJO  ', 1, 1, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0, 15000, 20000, 0, 0, 1, 1);
 							 
-INSERT INTO PRODUCTOS VALUES ('MONITOR 23 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K', 2, 2, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0,  5500, 7500,  0, 0, 1);
+INSERT INTO PRODUCTOS VALUES ('MONITOR 23 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K', 2, 2, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0,  5500, 7500,  0, 0, 1, 1);
 
-INSERT INTO PRODUCTOS VALUES ('MONITOR 24 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K', 3, 2, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0,  5500, 7500,  0, 0, 1);
+INSERT INTO PRODUCTOS VALUES ('MONITOR 24 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K', 3, 2, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0,  5500, 7500,  0, 0, 1, 1);
 
 --	CREAR TABLA DE USUARIOS
 CREATE TABLE USUARIOS (
@@ -115,7 +130,7 @@ INSERT INTO PEDIDO VALUES (2,'P',12000,2000,1600,11600,'2024-12-10','2024-12-25'
 
 --	CREAR TABLA DE DETALLES DEL DEPIDO
 CREATE TABLE PEDIDO_DETALLES (
-	pedidoDetallesId int IDENTITY(1,1) PRIMARY KEY,
+	pedidoDetallesId int(10) AUTO_INCREMENT,
 	pedidoId integer,
 	productoId integer,
 	cantidad integer,
@@ -127,8 +142,9 @@ CREATE TABLE PEDIDO_DETALLES (
 	totalPedido decimal,
 	fechaCompra datetime,
 	fechaEntrega datetime,
-	CONSTRAINT fk_pedidoId FOREIGN KEY (pedidoId) REFERENCES PEDIDO(pedidoId),
-	CONSTRAINT fk_productoId FOREIGN KEY (productoId) REFERENCES PRODUCTOS(productoId)
+	FOREIGN KEY (pedidoId) REFERENCES PEDIDO(pedidoId),
+	FOREIGN KEY (productoId) REFERENCES PRODUCTOS(productoId),
+	PRIMARY KEY (pedidoDetallesId)
 );
 
 --	INSERTAR DATOS DEL DETALLE DEL PEDIDO

@@ -1,0 +1,79 @@
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 80px 0px;
+}
+
+#formulario-login {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    width: 100%;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input {
+    margin: 5px 0px;
+    padding: 8px 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    margin: 10px 10px;
+}
+
+label {
+    color: #909090;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+input[type="submit"] {
+    background-color: #50a140;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4d8e40;
+}
+
+.hr-login {
+    border: none;
+    color: #ff0505;
+    background-color: #ff0505;
+    margin: 13px;
+}
+
+.contenedor-formulario h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
