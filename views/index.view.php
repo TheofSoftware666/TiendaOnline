@@ -71,20 +71,25 @@
         <div class="contenedor-carrito">
             <div class="menu-contenedor">
                 <div class="navegacion-content">
-                    <button id="btn-close-carrito" class="btn-close">
-                        <div class="btn-x x-1"></div>
-                        <div class="btn-x x-2"></div>
-                        <div class="btn-x x-3"></div>
-                    </button>
+                    <div class="header-carrito">
+                        <button id="btn-close-carrito" class="btn-close">
+                            <div class="btn-x x-1"></div>
+                            <div class="btn-x x-2"></div>
+                            <div class="btn-x x-3"></div>
+                        </button>
+                        <span>Carrito Vacio</span>
+                    </div>
                     <hr class="hr">
                     <div class="contenido-del-carrito">
                         <!-- Agregar contenido del carrito-->
-
+                        <div class="carrito-productos">
+                            
+                        </div>
                         <!-- Fin del contenido del carrito-->
                     </div>
                 </div>
                 <div class="navegacion-usuario">
-                    <button class="btn-panel"><a href="">Ir al Carrito</a></button>
+                    <button class="btn-panel"><a href="">Ir a Comprar</a></button>
                 </div>
             </div>
         </div>
