@@ -1,5 +1,6 @@
 <?php
 
-require './../controller/controller.configuracion.php';
+    
+require 'configuracion.view.php';
 
 ?>

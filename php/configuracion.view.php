@@ -79,6 +79,85 @@
         </div>
     </section>
 
+    <!--  Seccion de Configuracion -->
+
+    <div class="contenedor-flex">
+        <div class="contenedor-formulario">
+            <h2>Completar tus datos</h2>
+            <form id="formulario-login" action="" method="post">
+                <div class="item-form">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <label for="">Ingresa tu nombre </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="apellido" placeholder="Apellidos">
+                    <label for="">Ingresa tu apellido </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="direccion" placeholder="Dirección">
+                    <label for="">Ingresa tu dirección </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="numeroExterior" placeholder="Eje: 45690">
+                    <label for="">Numero Exterior </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="numeroInterior" placeholder="Eje: 45690">
+                    <label for="">Numero Interior </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="cp" placeholder="Eje: 45690">
+                    <label for="">Codigo Postal </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="calle1" placeholder="Eje: Catarino Muñoz">
+                    <label for="">Cruze calle 1</label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="calle2" placeholder="Eje: Jose luis lupercio">
+                    <label for="">Cruze calle 2</label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="municipio" placeholder="Municipio">
+                    <label for="">Ingresa tu Municipio </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="colonia" placeholder="Colonia">
+                    <label for="">Ingresa tu Colonia </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="estado" placeholder="Estado">
+                    <label for="">Ingresa tu Estado </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="pais" placeholder="Pais">
+                    <label for="">Ingresa tu Pais </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="lada" placeholder="+ 52">
+                    <label for="">Lada </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="celular" placeholder="Eje: 3310453525">
+                    <label for="">Celular </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="rfc" placeholder="RFC">
+                    <label for="">RFC </label>
+                </div>
+                <div class="item-form">
+                    <input type="text" name="razonSocial" placeholder="Razon Social">
+                    <label for="">Razon Social </label>
+                </div>
+                <div class="item-form">
+                    <input type="submit" name="btn-login" value="Guardar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Fin Seccion de Configuracion -->
+
     <footer>
         <div class="content-footer">
             <div class="item-content-footer">
