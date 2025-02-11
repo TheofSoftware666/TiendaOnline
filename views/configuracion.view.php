@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./../public/css/header.css">
     <link rel="stylesheet" href="./../public/css/configuracion.css">
     <link rel="stylesheet" href="./../public/css/footer.css">
+    <link rel="stylesheet" href="./../public/css/carrito.css">
     <script src="https://kit.fontawesome.com/ba1cd93264.js" crossorigin="anonymous"></script>
     <title>Configuración</title>
 </head>
@@ -55,28 +56,143 @@
                 </div>
             </div>
         </div>
-        <div class="contenedor-carrito">
-            <div class="menu-contenedor">
-                <div class="navegacion-content">
-                    <button id="btn-close-carrito" class="btn-close">
-                        <div class="btn-x x-1"></div>
-                        <div class="btn-x x-2"></div>
-                        <div class="btn-x x-3"></div>
-                    </button>
-                    <hr class="hr">
-                    <div class="contenido-del-carrito">
-                        <!-- Agregar contenido del carrito-->
 
-                        <!-- Inyectar codigo html con javaScript -->
-
-                        <!-- Fin del contenido del carrito-->
+        <div class="content-carrito">
+            <div class="card-carrito"> <!-- DISPLAY FLEX -->
+                <div class="item-carrito header-carrito">
+                    <div class="title-carrito">
+                        <span>Tu carrito esta vacio</span>
+                    </div>
+                    <div id="btn-close-carrito" class="btn-carrito-cerrar">
+                        <button id="btn-close" class="btn-close">
+                            <div class="btn-x x-1"></div>
+                            <div class="btn-x x-2"></div>
+                            <div class="btn-x x-3"></div>
+                        </button>
                     </div>
                 </div>
-                <div class="navegacion-usuario">
-                    <button class="btn-panel"><a href="">Ir al Carrito</a></button>
+                
+                <!-- // * CONTENIDO DEL CARRITO -->
+                <div class="item-carrito main-carrito">
+                    <!--START Contenido del carrito -->
+
+                    <!-- // ? CARRITO VACIO -->
+                    <div class="carrito-vacio">
+                        <div class="item-carrito-vacio img-carrito">
+                            <img src="./../public/img/carro-vacio.png" alt="Error al cargar la imagen" title="Carrito Vacio">
+                        </div>
+                        <div class="item-carrito-vacio">
+                            TU CARRITO ESTA VACIO
+                        </div>
+                    </div>
+
+                    <!-- // ? CARRITO CON PRODUCTOS -->
+                    <!-- <div class="carrito-productos carrito-activo">
+                        <div class="producto-carrito">
+                            <div class="item-carrito-producto item-producto-1">
+                                <div class="img-producto-carrito">
+                                    <img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error al cargar la imagen">
+                                </div>
+                                <div class="carrito-title-producto">
+                                    <p class="title-prod">Suero Reconstructor</p>
+                                    <p class="desc-prod">Suero que ayuda a fortalece el cab...</p>
+                                    <p class="import">$ 13,000.00</p>
+                                </div>
+                            </div>
+                            <div class="item-carrito-producto item-producto-2">
+                                <button>Eliminar</button>
+                                <select name="cantidad" id="cantidad">
+                                    <option value="1">1 Pieza.</option>
+                                    <option value="2">2 Piezas</option>
+                                    <option value="3">3 Piezas</option>
+                                    <option value="4">4 Piezas</option>
+                                    <option value="5">5 Piezas</option>
+                                    <option value="6">6 Piezas</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- // ? CARRITO DETOS DE ENVIO -->
+                    <!-- <div class="contenido-form">
+                        <form action="" method="post">
+                            <div class="contenedor-input">
+                                <input type="text" name="codigoPostal" id="codigoPostal" placeholder="Codigo Postal">
+                            </div>
+                            <div class="contenedor-input">
+                                <select name="estado" id="estado">
+                                    <option value="">Selecciona Estado</option>
+                                </select>
+                            </div>
+                            <div class="contenedor-input">
+                                <select name="municipio" id="municipio">
+                                    <option value="OTRO MUNICIPIO">Selecciona Municipio</option>
+                                </select>
+                            </div>
+                            <div class="contenedor-input">
+                                <select name="colonia" id="colonia">
+                                    <option value="OTRO COLONIA">Selecciona Colonia</option>
+                                </select>
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="nInterior" id="nInterior" placeholder="Num. Interior">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="nExterior" id="nExterior" placeholder="Num. Exterior">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="calleCruze1" id="calleCruze1" placeholder="Calle cruze 1">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="calleCruze2" id="calleCruze2" placeholder="Calle cruze 2">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="email" placeholder="Correo Electronico" tabindex="1" name="email" id="email" placeholder="">
+                            </div>
+                            <div class="contenedor-input">
+                                <input type="text" name="email" id="name" placeholder="Nombre Completo">
+                            </div>
+                        </form>
+                    </div> -->
+
+                    <!--END Contenido del carrito -->
+                </div>
+                <!--  // * FOOTER CARRITO -->
+                <div class="item-carrito action-btn">
+                    <!-- <div class="content-total">
+                        <span class="title-total">Direccion Envio</span>
+                        <span class="cantidad-total"></span>
+                    </div>
+                    <div class="content-total">
+                        <span class="title-descuento">Nombre</span>
+                        <span class="cantidad-descuento">Marco Antonio</span>
+                    </div>
+                    <div class="content-total">
+                        <span class="title-subtotal">Direccion</span>
+                        <span class="cantidad-subtotal"> Calle San pablo 78</span>
+                    </div>
+                    <div class="content-total">
+                        <span class="title-subtotal">Colonia</span>
+                        <span class="cantidad-subtotal"> La pacifico</span>
+                    </div>
+                    <div class="content-total">
+                        <span class="title-subtotal">Municipio</span>
+                        <span class="cantidad-subtotal"> El salto</span>
+                    </div>
+                    <div class="content-total">
+                        <span class="title-subtotal">Estado</span>
+                        <span class="cantidad-subtotal"> Jalisco</span>
+                    </div> -->
+                    <!-- <button class="btn-comprar">COMPRAR</button> -->
+                    <!-- <button class="btn-info-envio">Enviar mi Pedido</button> -->
+                    <button class="btn-ir-comprar">IR A PRODUCTOS</button>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!--  Seccion de Configuracion -->

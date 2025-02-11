@@ -4,12 +4,13 @@ const barraBusqueda = document.querySelector('#barra-buscar');
 const btnMenu = document.querySelector('#btn-menu');
 const btnCerrar = document.querySelector('#btn-close');
 const header = document.querySelector('.sec-header');
-const divCarrito = document.querySelector('.contenedor-carrito');
+const divCarrito = document.querySelector('.content-carrito');
 const btnCerrarDivCarrito = document.querySelector('#btn-close-carrito');
 const btnAbrirCarrito = document.querySelector('#contenedorCarrito');
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', app);
 
+function app() {
     // console.log("Termino de cargar la pagina");
     btnMenu.addEventListener('click',mostrarNavegacion);
     btnCerrar.addEventListener('click',cerrarNavegacion);
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // Eliminar presentacion 
     presentacion();
-});
+};
 
 //  Mostrar menu de navegacion
 function mostrarNavegacion(){

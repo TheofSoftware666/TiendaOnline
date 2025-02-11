@@ -9,7 +9,7 @@
 <body>
     <div class="contenedor-error">
         <div class="content-flex-error">
-            <div class="item-content-error"><img src='./img/error.png' alt="Error al cargan la imagen" title="Ah ocurrido un error"></div>
+            <div class="item-content-error"><img src='./public/img/error.png' alt="Error al cargan la imagen" title="Ah ocurrido un error"></div>
             <div class="item-content-error">¡ Al parecer ah ocurrido un error al cargar la pagina !</div>
         </div>
     </div>
