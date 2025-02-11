@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/login.css">
+    <link rel="stylesheet" href="./../public/css/login.css">
+    <script src="https://kit.fontawesome.com/ba1cd93264.js" crossorigin="anonymous"></script>
     <title>INICIAR SESION</title>
 </head>
 <body>
-    <div class="contenedor-flex">
-        <div class="contenedor-formulario">
-            <h3>Iniciar sesion</h3>
-            <form id="formulario-login" action="" method="post">
-                <input type="text" name="usuario" placeholder="USUARIO">
-                <input type="password" name="pass" placeholder="CONTRASEÑA">
-                <input type="submit" name="btn-login" value="INICIAR SESION">
-                <hr class="hr-login">
-                <p>¿Aun no cuentas con una cuenta? <a href="./registrarte.php">Click para registrarte</a> | <a href="./../index.php">Ir a inicio</a></p>
-            </form>
+    <div class="contenedor-login-flex">
+        <div class="login">
+            <div class="item-login-flex content-form-login">
+                <form action="" method="post">
+                        <div class="title-form-login">
+                            iniciar sesion
+                        </div>
+                        <input type="text" id="mail" name="mail" placeholder="Correo Electronico">
+                        <input type="password" id="password" name="password" placeholder="Contraseña">
+                        <p>¿Olvidaste tu<a href=""> constraseña?</a></p>
+                        <input type="submit" name="login" value="Iniciar Sesion">
+                        <p>¿Aun no tienes cuenta? <a href="">Registrate</a></p>
+                </form>
+            </div>
+            <div class="item-login-flex content-presetacion-login">
+                <div class="title-login">
+                    <div class="bienvenida-login-title">Bienvenido de nuevo <span id="nombreUsuario"></span></div>
+                    <div class="bienvenida-login-body">Building technology te da multiples beneficios por ser parte de nosotros</div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="./../javascript/login.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 function consultarProductos($conexion){
-    $consulta = $conexion->prepare('SELECT * FROM inventario');
+    $consulta = $conexion->prepare('SELECT * FROM PRODUCTOS');
     $consulta->execute();
 
     $obtenerDatos = $consulta->fetchAll();
@@ -15,7 +15,7 @@ function insertarHTML($productos){
        <div class="card-producto">
             <div class="producto-img"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></div>
             <div class="monto-producto">$ 1,200.00</div>
-            <div class="producto-marca">' . $producto['nombreProducto'] . '</div>
+            <div class="producto-marca">' . '</div>
             <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
             <div class="producto-promocion">% 30 de descuento</div>
             <div class="producto-con-descuento">Con descuento: $ 899.99</div>

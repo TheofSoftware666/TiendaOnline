@@ -1,29 +1,21 @@
-<?php
-
-include './models/Carrito/carrito.php';
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/presentacion.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/header.css">
-    <link rel="stylesheet" href="./public/css/carrito.css">
-    <link rel="stylesheet" href="./public/css/productos.css">
-    <link rel="stylesheet" href="./public/css/footer.css">
-    <link rel="stylesheet" href="./public/css/formulario.css">
+    <link rel="stylesheet" href="./../public/css/presentacion.css">
+    <link rel="stylesheet" href="./../public/css/style.css">
+    <link rel="stylesheet" href="./../public/css/header.css">
+    <link rel="stylesheet" href="./../public/css/carrito.css">
+    <link rel="stylesheet" href="./../public/css/productos.css">
+    <link rel="stylesheet" href="./../public/css/footer.css">
+    <link rel="stylesheet" href="./../public/css/productoDetalle.css">
+    <link rel="stylesheet" href="./../public/css/formulario.css">
     <script src="https://kit.fontawesome.com/ba1cd93264.js" crossorigin="anonymous"></script>
     <title>www.Building Technology.com</title>
 </head>
 <body>
-    
-    <section id="presentacion" class="presentacion-fondo">
-        <div class="item-fondo"><img src="./public/img/Recurso 6.png" alt="Error 404"></div>
-    </section>
 
     <section class="sec-anuncio">
         <div class="banner-anuncio">
@@ -62,10 +54,11 @@ include './models/Carrito/carrito.php';
                         <button type="submit" class="btn-buscar" name="submits"><img src="./public/img/simbolo-de-la-interfaz-de-busqueda.png" alt="Error 404" title="Buscar"></button>
                     </form>
                     <div class="menu-categorias">
-                        <button class="btn-categoria"><a href="./controller/productos.php" title="Visitar Productos">Productos</a></button>
+                        <button class="btn-categoria"><a href="./../index.php" title="Visitar Productos">Inicio</a></button>
                         <button class="btn-categoria"><a href="" title="">Promociones</a></button>             
                         <button class="btn-categoria"><a href="" title="">Lo mas vendido</a></button>             
                         <button class="btn-categoria"><a href="" title="">Marcas</a></button>             
+                        <button class="btn-categoria"><a href="" title="">Para ti</a></button>             
                         <button class="btn-categoria"><a href="#formularioContacto" title="Nuestro Formulario">Contacto</a></button>             
                     </div>
                 </div>
@@ -228,123 +221,206 @@ include './models/Carrito/carrito.php';
         </div>
     </section>
 
-    <section class="sec-carousel">
-        <div class="content-banner">
-            <img src="./public/img/banner-facebook-builtech.png" alt="Error 404" title="Promocion">
-        </div>
-    </section>
-
-    <section class="sec-productos">
-        <div class="content-categoria">
-            <h3>Lo mas vendido</h3>
-            <hr>
-            <div class="dezplazamiento-categoria">
-               <?php
-               insertarHTML($productos);
-               ?>
+    <div class="contenedor-producto-detalle">
+        <div class="content-producto-detalle">
+            <div class="item-contenedor-producto">
+                <div class="menu-categorias">
+                    <span>Categorias</span>
+                    <a href="">Accesorios</a>
+                    <a href="">Audio</a>
+                    <a href="">Electrodomesticos</a>
+                    <a href="">Componentes</a>
+                    <a href="">Televisiones</a>
+                    <a href="">Arduino</a>
+                    <a href="">Celulares</a>
+                    <a href="">Wifi</a>
+                </div>
             </div>
-        </div>
-        <div class="content-categoria">
-            <h3>En promocion</h3>
-            <hr>
-            <div class="dezplazamiento-categoria">
-                <div class="card-producto">
-                    <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href="index.php?producto=11231"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
-                    <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                        <div class="producto-codigo">002314</div>
-                        <div class="producto-marca">Dove</div>
-                        <div class="producto-montos">
-                            <div class="monto-descuento">$ 1,200.00</div>
-                            <div class="monto-producto">$ 999.00</div>
+            <div class="item-contenedor-producto contenido-producto-detalle">
+                <div class="ruta-navegacion">
+                    <a href="">Inicio <span>></span></a>
+                    <a href="">Salas <span>></span></a>
+                    <a href="">Sala gris <span>></span></a>
+                </div>
+
+            <div class="content-producto-banner">
+                <div class="item-content-producto-detalle">
+                    <img src="./../public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="">
+                </div>
+                <div class="item-content-producto-detalle">
+                    <div class="title-detalle">Shampoo Anticaida</div>
+                    <div class="descripcion-detalle">Kit de limpieza personal para dama incluye un shampoo anticaida & un suero reconstructor de regalo</div>
+                    <div class="stock">Disponible: 15 piezas</div>
+                    <div class="monto-detalle">$ 999.00</div>
+                    <div class="seleccion-producto-detalle"></div>
+                    <div class="actions">
+                        <a class="btn btn-add-carrito-dettale" href=""><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</a>
+                        <a class="btn btn-buy-detalle" href="">Comprar ahora</a>
+                    </div>
+                    <div class="envio-detalle">
+                        <div class="fecha-prox-envio"><i class="fa-solid fa-truck-fast"></i> Llega Mañana</div>
+                        <div class="fecha-prox-envio">Envios gratis apartir de compras de $ 900.00 </div>
+                    </div>
+                    <div class="contenedor-pagos">
+                        <div class="opciones-pago-detalle">
+                            <div class="opcion-pago-detalle"><i class="fa-brands fa-cc-visa"></i></div>
+                            <div class="opcion-pago-detalle"><i class="fa-brands fa-cc-stripe"></i></div>
+                            <div class="opcion-pago-detalle"><i class="fa-brands fa-cc-mastercard"></i></i></div>
                         </div>
-                        <button value="002314" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                        <div class="title-contenedor-pagos">Compra segura y protegida en todo momento</div>
                     </div>
                 </div>
+            </div>
+
+        <!-- PRODCUTOS RELACIONADOS -->
+        <div class="content-productos-relacionados">
+            <div class="title-productos-relacionados">Productos relacionados</div>
+            <div class="productos-relacionados">     
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href=""><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href=""><img src="./../public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                        <div class="producto-codigo">002315</div>
-                        <div class="producto-marca">Dove</div>
-                        <div class="producto-montos">
-                            <div class="monto-descuento">$ 1,200.00</div>
-                            <div class="monto-producto">$ 999.00</div>
-                        </div>
+                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                    <div class="producto-codigo">002316</div>
+                    <div class="producto-marca">Dove</div>
+                    <div class="producto-montos">
+                        <div class="monto-descuento">$ 1,200.00</div>
+                        <div class="monto-producto">$ 999.00</div>
+                    </div>
                         <button type="button" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
                     </div>
                 </div>
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href=""><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href=""><img src="./../public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                        <div class="producto-codigo">002316</div>
-                        <div class="producto-marca">Dove</div>
-                        <div class="producto-montos">
-                            <div class="monto-descuento">$ 1,200.00</div>
-                            <div class="monto-producto">$ 999.00</div>
-                        </div>
+                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                    <div class="producto-codigo">002316</div>
+                    <div class="producto-marca">Dove</div>
+                    <div class="producto-montos">
+                        <div class="monto-descuento">$ 1,200.00</div>
+                        <div class="monto-producto">$ 999.00</div>
+                    </div>
+                        <button type="button" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
+                    <div class="producto-img"><a href=""><img src="./../public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-info">
+                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                    <div class="producto-codigo">002316</div>
+                    <div class="producto-marca">Dove</div>
+                    <div class="producto-montos">
+                        <div class="monto-descuento">$ 1,200.00</div>
+                        <div class="monto-producto">$ 999.00</div>
+                    </div>
                         <button type="button" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
                     </div>
                 </div>
             </div>
+            <div><a class="btn btn-buy-detalle" href="">Ver mas productos similares</a></div>
         </div>
-        <div class="content-categoria">
-            <h3>Marcas</h3>
-            <hr>
-            <div class="dezplazamiento-categoria">
-                <div class="card-producto">
-                    <div class="producto-img"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></div>
-                    <div class="monto-producto">$ 1,200.00</div>
-                    <div class="producto-marca">Dove</div>
-                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                    <div class="producto-promocion">% 30 de descuento</div>
-                    <div class="producto-con-descuento">Con descuento: $ 899.99</div>
-                    <button type="button" class="btn-agregar-carrito"> <img src="./public/img/carrito-de-compras.png" alt="">Agregar al carrito</button>
+        
+            <!-- SECCION DE COMENTARIOS -->
+            <div class="comentarios">
+                <div class="title-comentarios">Comentarios</div>
+                <div class="content-agregar-comentario">
+                    <div class="total-reseñas">Comentarios totales: <span>3000</span></div>
+                    <div class="calificacion-star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    <div class="agregar-reseña">
+                        <a class="btn btn-buy-detalle" href="">Agregar comentario</a>
+                    </div>
                 </div>
-                <div class="card-producto">
-                <div class="producto-img"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></div>
-                    <div class="monto-producto">$ 1,200.00</div>
-                    <div class="producto-marca">Dove</div>
-                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                    
-                    <button type="button" class="btn-agregar-carrito"> <img src="./public/img/carrito-de-compras.png" alt="">Agregar al carrito</button>
+                <div class="content-comentario">
+                    <div class="info-comentario">
+                        <div class="cuenta-usuario">
+                            <div class="img-usuario">E</div>
+                            <div class="cuenta-usuario-nombre">Esmeralda Valencia</div>
+                        </div>
+                        <div class="fecha-publicacion">22 de Enero 2025</div>
+                    </div>
+                    <div class="message-comentario">
+                        <div>Me gusto mucho el producto se adapta bien a mi cabello muy bueno solo tardo en llegar el producto</div>
+                        <div class="calificacion-star calificacion-usuario">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-producto">
-                <div class="producto-img"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></div>
-                    <div class="monto-producto">$ 1,200.00</div>
-                    <div class="producto-marca">Dove</div>
-                    <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
-                    <div class="producto-promocion">% 30 de descuento</div>
-                    <div class="producto-con-descuento">Con descuento: $ 899.99</div>
-                    <button type="button" class="btn-agregar-carrito"> <img src="./public/img/carrito-de-compras.png" alt="">Agregar al carrito</button>
+                <div class="content-comentario">
+                    <div class="info-comentario">
+                        <div class="cuenta-usuario">
+                            <div class="img-usuario">E</div>
+                            <div class="cuenta-usuario-nombre">Esmeralda Valencia</div>
+                        </div>
+                        <div class="fecha-publicacion">22 de Enero 2025</div>
+                    </div>
+                    <div class="message-comentario">
+                        <div>Me gusto mucho el producto se adapta bien a mi cabello muy bueno solo tardo en llegar el producto</div>
+                        <div class="calificacion-star calificacion-usuario">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-comentario">
+                    <div class="info-comentario">
+                        <div class="cuenta-usuario">
+                            <div class="img-usuario">E</div>
+                            <div class="cuenta-usuario-nombre">Esmeralda Valencia</div>
+                        </div>
+                        <div class="fecha-publicacion">22 de Enero 2025</div>
+                    </div>
+                    <div class="message-comentario">
+                        <div>Me gusto mucho el producto se adapta bien a mi cabello muy bueno solo tardo en llegar el producto</div>
+                        <div class="calificacion-star calificacion-usuario">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-comentario">
+                    <div class="info-comentario">
+                        <div class="cuenta-usuario">
+                            <div class="img-usuario">E</div>
+                            <div class="cuenta-usuario-nombre">Esmeralda Valencia</div>
+                        </div>
+                        <div class="fecha-publicacion">22 de Enero 2025</div>
+                    </div>
+                    <div class="message-comentario">
+                        <div>Me gusto mucho el producto se adapta bien a mi cabello muy bueno solo tardo en llegar el producto</div>
+                        <div class="calificacion-star calificacion-usuario">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ver-mas-comentarios">
+                    <a class="btn btn-buy-detalle" href="">Ver mas comentarios</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="sec-form-mail">
-        <div class="content-form-mail">
-            <div class="item-form-mail">
-                <div class="text-info">
-                <h3>Contactanos</h3>
-                <p>Llena el formulario para contactarte por correo electronico y/o telefono.</p>
-                </div>
-            </div>
-            <div class="item-form-mail content-form">
-                <form id="formularioContacto" action="" method="post">
-                    <input type="text" id="inputNombre" name="nombre" placeholder="Nombre Completo">
-                    <input type="mail" id="inputMail" name="correo" placeholder="Correo electronio">
-                    <input type="text" id="inputTelefono" name="telefono" placeholder="Ingresa tu numero de telefono">
-                    <textarea name="mensaje" placeholder="Ingresa tu mensaje" id="textMensaje"></textarea>
-                    <input name="submitContacto" id="submitContacto" type="submit" value="Enviar correo">
-                </form>
-            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <div class="content-footer">
@@ -385,24 +461,6 @@ include './models/Carrito/carrito.php';
         <hr class="item-hr-footer">
         <div class="huella-buil">Sitio web elaborado por &copy; <a href="" target="_blank">Building Technology</a> para la empresa Tu negocio.com</div>
     </footer>  
-    <div class="content-wha">
-        <a href="https://api.whatsapp.com/send/?phone=3320525516&text=Hola%20Building%20Technology,%20%C2%BFMe%20puedes%20ayudar?&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="./public/img/whatsapp.png" alt="Whastapp" title="Ingresar WhatsApp"></a>
-    </div> 
-    <!-- <div class="toast">
-        <div class="toast-head">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div>Agregaste un producto al carrito</div>
-        </div>
-        <div class="toast-body"> Crea tu cuenta para obtener beneficios</div>
-    </div> -->
-    <div class="content-modal">
-        <div class="modal">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <script src="./javascript/app.js"></script>
-    <script src="./javascript/carrito.js"></script>
+    <script src="./../javascript/app.js"></script>
 </body>
 </html>

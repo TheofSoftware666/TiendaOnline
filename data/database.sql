@@ -78,6 +78,9 @@ CREATE TABLE PRODUCTOS (
     UNIQUE(nombre)
 );
 
+-- INSERTAR DATOS
+INSERT INTO PRODUCTOS(nombre, descripcion,marcaId,categoriaId, stock,imagen1,imagen2,imagen3,imagen4,imagen5,estatusProducto,estatusPromo,promocion,monto,descuento1,descuento2,iva,vendidos) VALUES ('SALA ESQUINADA', 'SALA ESQUINADA DE COLOR ROJO  ', 1, 1, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0, 15000, 20000, 0, 0, 1, 1);
+
 -- INSERTAR DATO DE PRUEBA----------------------
 INSERT INTO PRODUCTOS VALUES ('SALA ESQUINADA', 'SALA ESQUINADA DE COLOR ROJO  ', 1, 1, 30, 'IMAGEN1.png', 'IMAGEN2.png', 'IMAGEN3.png', 'IMAGEN4.png', 'IMAGEN5.png', 1, 0, 15000, 20000, 0, 0, 1, 1);
 							 

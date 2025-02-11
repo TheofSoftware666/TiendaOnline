@@ -1,6 +1,38 @@
 # TiendaOnline
 
-Esta sera una tienda en linea para vender a culaquier usuario
+
+
+
+# Contenido del Carrito datos personales
+
+<div class="contenido-form">
+                                <form action="" method="post">
+                                    <div class="contenedor-input">
+                                        <input type="email" placeholder="Correo Electronico" name="email" id="email" placeholder="">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="email" id="name" placeholder="Nombre Completo">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="nInterior" id="nInterior" placeholder="Num. Interior">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="nExterior" id="nExterior" placeholder="Num. Exterior">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="calleCruze1" id="calleCruze1" placeholder="Calle cruze 1">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="calleCruze2" id="calleCruze2" placeholder="Calle cruze 2">
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <input type="text" name="codigoPostal" id="codigoPostal" placeholder="Codigo Postal">
+                                    </div>
+                                </form>
+                            </div>
 
 # Si el carrito esta vacio sera este contenido
 <div class="carrito-vacio">
