@@ -26,6 +26,7 @@
                 <div class="title-login">
                     <div class="bienvenida-login-title">Bienvenido de nuevo <span id="nombreUsuario"></span></div>
                     <div class="bienvenida-login-body">Building technology te da multiples beneficios por ser parte de nosotros</div>
+                    <div class="bienvenida-login-body"><a href="">Avisos de Privacidad</a></div>
                 </div>
             </div>
         </div>
