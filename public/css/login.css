@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -111,3 +112,118 @@ input[type="submit"]:hover {
 form p {
     color: #a2a2a2;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.contenedor-login-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px;
+    overflow: hidden;
+}
+
+
+.item-login-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content-form-login {
+    background-color: #fff;
+}
+
+.content-presetacion-login {
+    color: #fff;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title-login {
+    text-align: center;
+    padding: 20px;
+}
+
+.bienvenida-login-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#nombreUsuario {
+    font-weight: 300;
+}
+
+.bienvenida-login-body {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+}
+
+.title-form-login {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 0px 10px;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .3s ease-in-out 0s;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000b3;
+}
+
+form p {
+    color: #a2a2a2;
+}
+>>>>>>> DevMarcoRico

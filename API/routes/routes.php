@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 function routesAPI($typeMethod){
@@ -8,4 +9,16 @@ function routesAPI($typeMethod){
 
 }
 
+=======
+<?php
+
+function routesAPI($typeMethod){
+    
+    $param = ['getProductos', 'getProducto', 'getCarrito',''];
+
+    
+
+}
+
+>>>>>>> DevMarcoRico
 ?>
