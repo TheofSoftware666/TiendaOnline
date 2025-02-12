@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 <?php
 
     
 
 
-=======
-<?php
-
-    
-
-
->>>>>>> DevMarcoRico
 ?>
