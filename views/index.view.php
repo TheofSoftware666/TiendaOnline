@@ -72,7 +72,7 @@ include './models/Carrito/carrito.php';
                 <div class="navegacion-usuario">
                     <button class="btn-panel"><a href="./controller/panelControl.php">PANEL DE CONTROL</a></button>
                     <button class="btn-configuracion"><a href="./controller/perfilUsuario.php">CONFIGURACION</a></button>
-                    <button class="btn-cerrar-session"><a href="./controller/login.php">INICIAR SESSION</a></button>
+                    <?php validarSession()?>
                 </div>
             </div>
         </div>
@@ -250,25 +250,25 @@ include './models/Carrito/carrito.php';
             <div class="dezplazamiento-categoria">
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href="index.php?producto=11231"><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href="./controller/pro.php?producto=11231"><img src="./public/img/arduino.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                        <div class="producto-nombre">Placa Arduino UNO con protoboard incluido</div>
                         <div class="producto-codigo">002314</div>
-                        <div class="producto-marca">Dove</div>
+                        <div class="producto-marca">Arduino</div>
                         <div class="producto-montos">
-                            <div class="monto-descuento">$ 1,200.00</div>
-                            <div class="monto-producto">$ 999.00</div>
+                            <div class="monto-descuento">$ 500.00</div>
+                            <div class="monto-producto">$ 300.00</div>
                         </div>
                         <button value="002314" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
                     </div>
                 </div>
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href=""><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href=""><img src="./public/img/bocina.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                        <div class="producto-nombre">Bocina Sony</div>
                         <div class="producto-codigo">002315</div>
-                        <div class="producto-marca">Dove</div>
+                        <div class="producto-marca">Sony</div>
                         <div class="producto-montos">
                             <div class="monto-descuento">$ 1,200.00</div>
                             <div class="monto-producto">$ 999.00</div>
@@ -278,14 +278,14 @@ include './models/Carrito/carrito.php';
                 </div>
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href=""><img src="./public/img/curology-sR1oAhAT_Uw-unsplash.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href=""><img src="./public/img/iphone.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
-                        <div class="producto-nombre">Shampoo Anticaida con suero hidratante para fortalecer el cabello</div>
+                        <div class="producto-nombre">iPhone 13 pro MAX</div>
                         <div class="producto-codigo">002316</div>
-                        <div class="producto-marca">Dove</div>
+                        <div class="producto-marca">Apple</div>
                         <div class="producto-montos">
-                            <div class="monto-descuento">$ 1,200.00</div>
-                            <div class="monto-producto">$ 999.00</div>
+                            <div class="monto-descuento">$ 12,200.00</div>
+                            <div class="monto-producto">$ 10,999.00</div>
                         </div>
                         <button type="button" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
                     </div>
@@ -401,6 +401,10 @@ include './models/Carrito/carrito.php';
             <div></div>
             <div></div>
         </div>
+    </div>
+    <div class="toast-login">
+        <div class="content-check"><i class="fa-solid fa-check"></i></div>
+        <div class="title-check">iniciaste sesion</div>
     </div>
     <script src="./javascript/app.js"></script>
     <script src="./javascript/carrito.js"></script>

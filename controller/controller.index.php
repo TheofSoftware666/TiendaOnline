@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Carrito
 require './models/carrito/carrito.php';
 
@@ -16,4 +18,17 @@ if(!$estadoConexion){
     $productos = consultarProductos($estadoConexion);
     require './views/index.view.php';
 }
+
+function validarSession() {
+    
+    // Validar inicio de sesion
+    if(isset($_SESSION['usuario'])){
+        echo '<button class="btn-cerrar-session"><a href="index.php?session=1&usurio=' . $_SESSION['usuario'] . '">Cerrar Sesion</a></button>';
+    }else{
+        echo '<button class="btn-cerrar-session"><a href="./controller/login.php">Iniciar sesion</a></button>';
+    }
+
+}
+
+
 ?>

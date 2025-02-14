@@ -86,3 +86,41 @@ html {
     height: auto;
     object-fit: cover;
 }
+
+.toast-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: -100px;
+    left: 45%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: auto;
+    color: #28a745;
+    font-weight: bold;
+    background-color: #affbc0  ;
+    transition: all .8s ease-in-out .0s;
+}
+
+.content-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #28a745;
+    margin-right: 10px;
+}
+
+.content-check i{
+    font-size: 20px;
+}
+
+.active-login {
+    top: 15px;
+}

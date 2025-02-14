@@ -48,11 +48,17 @@ body {
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('./../img/login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .title-login {
     text-align: center;
     padding: 20px;
+    text-shadow: 3px 3px 4px #000;
 }
 
 .bienvenida-login-title {
@@ -66,7 +72,7 @@ body {
 
 .bienvenida-login-body {
     font-size: 18px;
-    margin-top: 20px;
+    margin: 20px 0px; 
 }
 
 form{
@@ -110,4 +116,22 @@ input[type="submit"]:hover {
 
 form p {
     color: #a2a2a2;
+}
+
+form p a {
+    color: #00B4DB;
+    text-decoration: none;
+}
+
+#loginError {
+    color: #f52121;
+}
+
+#salir-login {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #0083B0;
+    border-radius: 3px;
+    text-shadow: none;
 }

@@ -11,7 +11,7 @@
     <div class="contenedor-login-flex">
         <div class="login">
             <div class="item-login-flex content-form-login">
-                <form action="" method="post">
+                <form action="./../controller/login.php" method="post">
                         <div class="title-form-login">
                             iniciar sesion
                         </div>
@@ -20,12 +20,14 @@
                         <p>¿Olvidaste tu<a href=""> constraseña?</a></p>
                         <input type="submit" name="login" value="Iniciar Sesion">
                         <p>¿Aun no tienes cuenta? <a href="">Registrate</a></p>
+                        <p id="loginError"></p>
                 </form>
             </div>
             <div class="item-login-flex content-presetacion-login">
                 <div class="title-login">
                     <div class="bienvenida-login-title">Bienvenido de nuevo <span id="nombreUsuario"></span></div>
                     <div class="bienvenida-login-body">Building technology te da multiples beneficios por ser parte de nosotros</div>
+                    <div class="bienvenida-login-salir"><a id="salir-login" href="">ir al inicio</a></div>
                 </div>
             </div>
         </div>

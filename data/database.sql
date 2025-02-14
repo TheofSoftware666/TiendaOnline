@@ -92,6 +92,9 @@ INSERT INTO PRODUCTOS VALUES ('MONITOR 24 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K'
 CREATE TABLE USUARIOS (
 	usuarioId int IDENTITY(1,1) PRIMARY KEY,
 	mail varchar(60),
+	pass varchar(60),
+	correoValidado char(1),
+	token varchar(60),
 	nombre varchar(30),
 	apellido varchar(20),
 	direccion varchar(60),
