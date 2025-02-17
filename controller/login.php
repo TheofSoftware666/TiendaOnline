@@ -22,12 +22,11 @@ if(isset($_POST['login'])){
     }
 
     $_SESSION['usuario'] = $comprobarUsuario;
+    // $_SESSION['usuarioId'] = $usuarioId;
 
-    echo $_SESSION;
-    echo 'creaste una sesion';
-
+    header("location: ./../index.php?user=" . $comprobarUsuario);
+    die();
 }
-
 
 require './../views/login.view.php';
 

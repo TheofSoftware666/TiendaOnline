@@ -223,8 +223,7 @@ include './models/Carrito/carrito.php';
             <div class="categorias-item"><a href="">Componentes</a></div>
             <div class="categorias-item"><a href="">Consolas</a></div>
             <div class="categorias-item"><a href="">Lo mas vendido</a></div>
-            <div class="categorias-item"><a href="">Promocion</a></div>
-            
+            <div class="categorias-item"><a href="">Promocion</a></div>  
         </div>
     </section>
 
@@ -259,7 +258,7 @@ include './models/Carrito/carrito.php';
                             <div class="monto-descuento">$ 500.00</div>
                             <div class="monto-producto">$ 300.00</div>
                         </div>
-                        <button value="002314" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                        <a href="index.php?producto=002314" value="002314" class="btn-agregar-carrito"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
                     </div>
                 </div>
                 <div class="card-producto">
