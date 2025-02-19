@@ -12,12 +12,15 @@ $estadoConexion = conexionBD();
 if(!$estadoConexion){
     require './views/error.php';
     return;
-}else{
-    // Requerir MODULO de index.php
-    require './models/index.php';
-    $productos = consultarProductos($estadoConexion);
-    require './views/index.view.php';
 }
+
+// Requerir MODULO de index.php
+require './models/index.php';
+$productos = consultarBD($estadoConexion, 'PRODUCTOS');
+$categorias = consultarBD($estadoConexion, 'CATEGORIA', '', 7);
+
+require './views/index.view.php';
+
 
 function validarSession() {
     

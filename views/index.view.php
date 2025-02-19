@@ -215,15 +215,9 @@ include './models/Carrito/carrito.php';
     
     <section class="sec-categorias">
         <div class="categorias">
-            <div class="categorias-item"><a href="">Electronicos</a></div>
-            <div class="categorias-item"><a href="">Muebles</a></div>
-            <div class="categorias-item"><a href="">Audio</a></div>
-            <div class="categorias-item"><a href="">Electrodomesticos</a></div>
-            <div class="categorias-item"><a href="">Celulares</a></div>
-            <div class="categorias-item"><a href="">Componentes</a></div>
-            <div class="categorias-item"><a href="">Consolas</a></div>
-            <div class="categorias-item"><a href="">Lo mas vendido</a></div>
-            <div class="categorias-item"><a href="">Promocion</a></div>  
+            <?php
+            categoriasHTML($categorias);
+            ?>
         </div>
     </section>
 
@@ -239,9 +233,9 @@ include './models/Carrito/carrito.php';
             <hr>
             <div class="dezplazamiento-categoria">
                <?php
-               insertarHTML($productos);
+               productosHTML($productos);
                ?>
-            </div>
+            </div>  
         </div>
         <div class="content-categoria">
             <h3>En promocion</h3>
@@ -249,7 +243,7 @@ include './models/Carrito/carrito.php';
             <div class="dezplazamiento-categoria">
                 <div class="card-producto">
                     <div class="producto-promocion" title="Producto en Descuento"><i class="fa-solid fa-tag" style="color: #ff0000;"></i>  % 25 de descuento </div>
-                    <div class="producto-img"><a href="./controller/pro.php?producto=11231"><img src="./public/img/arduino.jpg" alt="Error 404" title="Nombre del producto"></a></div>
+                    <div class="producto-img"><a href="./controller/producto.php?producto=11231"><img src="./public/img/arduino.jpg" alt="Error 404" title="Nombre del producto"></a></div>
                     <div class="producto-info">
                         <div class="producto-nombre">Placa Arduino UNO con protoboard incluido</div>
                         <div class="producto-codigo">002314</div>

@@ -19,7 +19,7 @@ INSERT INTO CONTACTO VALUES ('Marco Antonio Rico Valadez', 'marcoricovaladez@gma
 
 -- CREAR TABLA DE CATEGORIAS 1ER
 CREATE TABLE CATEGORIA (
-	categoriaId int(10),
+	categoriaId int AUTO_INCREMENT ,
 	nombre varchar(20) not null,
 	UNIQUE(nombre),
 	PRIMARY KEY(categoriaId)
@@ -92,7 +92,7 @@ INSERT INTO PRODUCTOS VALUES ('MONITOR 24 PUL', 'MONITOR ASUS DE 30 PULGADAS 4K'
 CREATE TABLE USUARIOS (
 	usuarioId int IDENTITY(1,1) PRIMARY KEY,
 	mail varchar(60),
-	pass varchar(60),
+	pass varchar(200),
 	correoValidado char(1),
 	token varchar(60),
 	nombre varchar(30),
@@ -115,7 +115,26 @@ CREATE TABLE USUARIOS (
 );
 
 -- INSERTAR DATOS
-INSERT INTO USUARIOS VALUES ('Esmeralda', 'Valencia Acosta', 'Calle San pablo', '78A', 45690, 'Catarino Muñoz', 'Jose Luis Lupercio', 'El salto', 'La pacifico', 'Jalisco', 'Mexico', '+52', 33205216, 'RIV02', 'Persona Moral');
+INSERT INTO USUARIOS VALUES (
+    'esmeralda@gmail.com', 
+    '$2y$10$sqETU1sRqh9viWTkK29PLuU2.qrBoDd/XZBYCfvZVOpBb9h7Kxj0O',
+    'F',
+    '21',
+    'Esmeralda',
+    'Valencia Acosta',
+    'Calle San pablo',
+    '78A', '',
+    45690, 
+    'Catarino Muñoz',
+    'Jose Luis Lupercio',
+    'El salto', 
+    'La pacifico', 
+    'Jalisco', 
+    'Mexico', 
+    '+52', 
+    3320525516, 
+    'RIV02', 
+    'Persona Moral');
 
 --	CREAR TABLA DE PEDIDO
 CREATE TABLE PEDIDO (

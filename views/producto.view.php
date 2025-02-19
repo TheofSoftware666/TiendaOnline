@@ -34,7 +34,7 @@
             <div class="header-items">
                 <form class="form-search navegacion-search" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <input type="text" class="barra-busqueda" name="buscar" placeholder="Buscar componentes">    
-                <button type="submit" class="btn-buscar" name="submits"><img src="./public/img/simbolo-de-la-interfaz-de-busqueda.png" alt="Error 404" title="Buscar"></button>
+                <button type="submit" class="btn-buscar" name="submits"><img src="./../public/img/simbolo-de-la-interfaz-de-busqueda.png" alt="Error 404" title="Buscar"></button>
                 </form>
             </div>
             <div id="contenedorCarrito" class="header-items btn-img"><i class="fa-solid fa-cart-shopping"></i></div>
@@ -51,7 +51,7 @@
                     <hr class="hr">
                     <form class="form-search barra-search" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                         <input type="text" id="barra-buscar" class="barra-busqueda" name="buscar" placeholder="Buscar componentes">    
-                        <button type="submit" class="btn-buscar" name="submits"><img src="./public/img/simbolo-de-la-interfaz-de-busqueda.png" alt="Error 404" title="Buscar"></button>
+                        <button type="submit" class="btn-buscar" name="submits"><img src="./../public/img/simbolo-de-la-interfaz-de-busqueda.png" alt="Error 404" title="Buscar"></button>
                     </form>
                     <div class="menu-categorias">
                         <button class="btn-categoria"><a href="./../index.php" title="Visitar Productos">Inicio</a></button>
@@ -90,7 +90,7 @@
                     <!-- // ? CARRITO VACIO -->
                     <div class="carrito-vacio">
                         <div class="item-carrito-vacio img-carrito">
-                            <img src="./public/img/carro-vacio.png" alt="Error al cargar la imagen" title="Carrito Vacio">
+                            <img src="./../public/img/carro-vacio.png" alt="Error al cargar la imagen" title="Carrito Vacio">
                         </div>
                         <div class="item-carrito-vacio">
                             TU CARRITO ESTA VACIO
